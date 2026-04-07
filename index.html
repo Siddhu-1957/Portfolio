@@ -2,73 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Portfolio - Siddharth G</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="page">
-
         <div class="card">
-
-            <!-- Navbar -->
             <header class="navbar">
                 <div class="logo">Siddharth G<span>.</span></div>
 
                 <nav>
-                    <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="https://github.com/Siddhu-1957?tab=repositories">Projects</a></li>
-                        <!-- <li><a href="">About</a></li> -->
+                    <ul id="nav-list">
+                        <li><a class="nav-link active" href="#home" data-target="home">Home</a></li>
+                        <li><a class="nav-link" href="#about" data-target="about">About</a></li>
+                        <li><a class="nav-link" href="#skills" data-target="skills">Skills</a></li>
+                        <li><a class="nav-link" href="#projects" data-target="projects">Projects</a></li>
+                        <li><a class="nav-link" href="#contact" data-target="contact">Contact</a></li>
                     </ul>
                 </nav>
 
-                <div class="menu-icon">☰</div>
+                <div class="controls-container" style="display: flex; align-items: center; gap: 15px;">
+                    <div class="theme-toggle" id="themeToggle" title="Toggle Theme">🌓</div>
+                    <div class="menu-icon">☰</div>
+                </div>
             </header>
-            <section class="hero">
 
-                <div class="hero-text">
-                    <p class="intro">Hey, I'm Siddharth G👋</p>
+            <div class="content-container">
+                <!-- HOME SECTION -->
+                <section id="home" class="hero section active-section">
+                    <div class="hero-text">
+                        <p>Hey, I'm Siddharth G👋</p>
+                        <h1>
+                            <span class="gradient-text">Web</span><br>
+                            Developer
+                        </h1>
+                        <p class="description">
+                            I'm a passionate web developer dedicated to creating engaging and user-friendly web interfaces.
+                        </p>
 
-                    <h1>
-                        <span class="gradient-text">Frontend</span><br>
-                        Developer
-                    </h1>
-
-                    <p class="description">
-                        I'm a frontend developer
-                    </p>
-
-                    <div class="buttons">
-                        <button class="primary-btn"><a href=""></a> Get In Touch</button>
-                        <a href="https://github.com/Siddhu-1957?tab=repositories" 
-   class="secondary-btn" 
-   target="_blank">
-   Browse Projects <img src="git.png" alt="github" style="width: 20px; height: 20px;">
-</a>
+                        <div class="buttons">
+                            <button class="primary-btn nav-btn" data-target="contact">Get In Touch</button>
+                            <a href="https://github.com/Siddhu-1957?tab=repositories" class="secondary-btn" target="_blank">
+                                Browse Projects <img src="git.png" alt="github" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 5px;">
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="sidphoto.jpeg" alt="Profile">
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="sidphoto.jpeg" alt="Profile">
+                        </div>
                     </div>
-                </div>
+                </section>
 
-            </section>
-<div class="pics">
-        <a href="https://github.com/Siddhu-1957" target="_blank">
-    <img src="git.png" alt="GitHub" width="40"><br>
-    <a href="https://www.linkedin.com/in/siddharth-g-3a0274385/" target="_blank">
-    <img src="linkdn.png" alt="linkedin" width="40">
-</a>
-</a>
-    </div>
+                <!-- ABOUT SECTION -->
+                <section id="about" class="section">
+                    <div class="section-content">
+                        <h2>About <span class="gradient-text">Me</span></h2>
+                        <p class="description">
+                            Hello! My name is Siddharth G. I'm an enthusiastic Web Developer transitioning ideas into real-world applications. My development journey began with a fascination for web technologies, which naturally evolved into creating comprehensive web experiences. 
+                        </p>
+                        <p class="description">
+                            I thrive on solving complex problems, learning new frameworks quickly, and collaborating with cross-functional teams to build beautiful, responsive, and performant user interfaces. In my free time, I enjoy keeping up with the latest trends in UI/UX and web standards.
+                        </p>
+                        <p class="description">
+                            <strong>🎓 Education:</strong><br>
+                            B.Tech in Information Technology<br>
+                            Bannari Amman Institute of Technology (2026 - 2029)
+                        </p>
+                    </div>
+                </section>
+
+                <!-- SKILLS SECTION -->
+                <section id="skills" class="section">
+                    <div class="section-content">
+                        <h2>My <span class="gradient-text">Skills</span></h2>
+                        <p class="description">Here are some of the technologies I work with to bring projects to life:</p>
+                        <div class="skills-grid">
+                            <div class="skill-card">HTML5</div>
+                            <div class="skill-card">CSS</div>
+                            <div class="skill-card">JavaScript</div>
+                            <div class="skill-card">React.js</div>
+                            <div class="skill-card">Tailwind CSS</div>
+                            <div class="skill-card">Git & GitHub</div>
+                            <div class="skill-card">Responsive Design</div>
+                            <div class="skill-card">Prompt Engineering</div>
+                        </div>
+
+                        <h2 style="font-size: 28px; margin-top: 35px;">Currently <span class="gradient-text">Working On</span></h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">Full Stack Development</div>
+                            <div class="skill-card">Prompt Engineering</div>
+                            <div class="skill-card">Machine Learning</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROJECTS SECTION -->
+                <section id="projects" class="section">
+                    <div class="section-content">
+                        <h2>My <span class="gradient-text">Projects</span></h2>
+                        <p class="description">A selection of my recent work. Feel free to visit my github for more.</p>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h3>Personal Portfolio</h3>
+                                <p>This current interactive portfolio built from scratch with HTML, CSS, and Vanilla JavaScript, featuring dark mode and dynamic sections.</p>
+                                <a href="https://github.com/Siddhu-1957" target="_blank">View Repository ➔</a>
+                            </div>
+                            <div class="project-card">
+                                <h3>Web Application UI</h3>
+                                <p>A responsive frontend interface focused on clean aesthetics and optimized user experience across devices.</p>
+                                <a href="https://github.com/Siddhu-1957" target="_blank">View Repository ➔</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT SECTION -->
+                <section id="contact" class="section">
+                    <div class="section-content">
+                        <h2>Get In <span class="gradient-text">Touch</span></h2>
+                        <p class="description">I am open to new opportunities. If you have a question, hit me up at <strong>siddhusid8692@gmail.com</strong>, and I will try my best to get back to you!</p>
+                        <p class="description" style="margin-top: -15px; font-weight: 500;">📞 Mobile no. : <strong>9080359207</strong></p>
+                        <div style="margin-top: 25px;">
+                            <a href="mailto:siddhusid8692@gmail.com" class="primary-btn" style="text-decoration: none; display: inline-block;">Send an Email directly</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="pics">
+                <a href="https://github.com/Siddhu-1957" target="_blank">
+                    <img src="git.png" alt="GitHub" width="40">
+                </a>
+                <a href="https://www.linkedin.com/in/siddharth-g-3a0274385/" target="_blank">
+                    <img src="linkdn.png" alt="linkedin" width="40">
+                </a>
+                <a href="https://x.com/Siddhusid210246" target="_blank">
+                    <img src="https://cdn.simpleicons.org/x/111111" alt="Twitter/X" width="37" style="margin-left: 3px;">
+                </a>
+                <a href="mailto:siddhusid8692@gmail.com" title="Email Me">
+                    <img src="https://cdn.simpleicons.org/gmail/111111" alt="Email" width="37" style="margin-left: 3px;">
+                </a>
+            </div>
         </div>
-        
-
     </div>
     
-
+    <script src="script.js"></script>
 </body>
 </html>
